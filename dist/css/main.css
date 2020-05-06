@@ -349,6 +349,17 @@ nav .navi .closebtn {
   transition: all 0.7s ease-in-out;
 }
 
+#projects .recipe_wrap {
+  position: relative;
+}
+
+#projects .recipe_wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
 @media screen and (max-width: 800px) {
   p {
     font-size: calc(17px + 0.5vw);
