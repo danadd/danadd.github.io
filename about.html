@@ -1,79 +1,118 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <meta charset="UTF-8">
-    <link href="./dist/css/main.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kalam:300,400,700|Montserrat:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="js/main.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<header>
-    <nav>
-        <div id="navislide" class="navi">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a> 
-            <a href="/contact.html">Contact Me</a>
-            <a href="index.html#projects">Projects</a> 
-        </div>    
-    </nav>
-    <div class="menu">
-        <img src="assets/menu.svg" onclick="openNav()"></img>
-        <a href="javascript:void(0)" class="clickmenu" onclick="openNav()">Menu</a>
-        </div>
-</header>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./dist/css/main.css" />
+
+    <!--js-->
+    <script src="https://kit.fontawesome.com/53e63c2ea0.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <header>
+      <nav>
+          <div id="navislide" class="navi">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="/contact.html">Contact Me</a>
+              <a href="/about.html">About Me</a>
+              <a href="/#projects">Projects</a> 
+          </div>
+      </nav>
+  
+      <div class="menu">
+          <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+          <a href="javascript:void(0)" class="clickmenu" onclick="openNav()">Menu</a>
+      </div>
+  </header>
 
     <div id="main">
-    <body>
-        <div id="headline">Limits Are Meant to Be Broken 
-            <div class="about">About Me</div>
-        </div>       
-
-        <div id="aboutinfo" class="info">
-        <div class="name"><h2>Name:</h2><p>Dana Draper</p></div>
-        <div class="pic">
-                <img 
-                id ="chicago"
-                src="/assets/chicago-architecture.jpg" 
-                alt="Chicago Architecture: Looking Up Between Buildings">
+    <section class="section">
+      <div id="headline">
+        <h2>Limits Are Meant to Be Broken </h2>
+        <p>Dana Draper | Chicago, IL</p>
+      </div>
+      <div class="about-center section-center">
+        <article class="about-img">
+          <img src="/assets/chicago-architecture.jpg" alt="about picture">
+        </article>
+        <article class="about">
+          <!-- btn container-->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="about">about</button>
+            <button class="tab-btn" data-id="skills">skills</button>
+            <button class="tab-btn" data-id="contact">contact</button>
+          </div>
+          <article class="about-content">
+            <!--single item-->
+            <div class="content active" id="about">
+              <h4>About</h4>
+              <p>Coding, whether it be websites or video game scripts and dialogues, is my passion. I have an attention to detail, and I love bringing my creativity and ideas to life.</p>
+              <p>In my free time I love gaming, writing novels, reading, and cooking.</p>
             </div>
-        <div class="location"><h2>Location:</h2> <p>Chicago, IL</p></div>
-        </div>
-
-        <h2>A Few More Words:</h2>
-        <div id="words" class="blah">
-        <p>Coding, whether it be websites or video game scripts and dialogues, is my passion. I have an attention to detail, and I love bringing my creativity and ideas to life.</p>
-        <p>In my free time I love gaming, writing novels, reading, and cooking.</p>
-        </div>
-
-        <div class="skill">My Skills:</div>
-        <div id="skills" class="container">
-        <div class="html">HTML5</div>
-        <div class="heart5"><img src="assets/fivehearts.png" alt="Five Zelda Hearts"></div>
-        <div class="css">CSS3</div>
-        <div class="heart5"><img src="assets/fivehearts.png" alt="Five Zelda Hearts"></div>
-        <div class="rwd">Responsive Web Design</div>
-        <div class="heart5"><img src="assets/fivehearts.png" alt="Five Zelda Hearts"></div>
-        <div class="js">JavaScript (ES6)</div>
-        <div class="heart4"><img src="assets/fourhearts.png" alt="Four Zelda Hearts"></div>
-        <div class="ps">Photoshop</div>
-        <div class="heart4"><img src="assets/fourhearts.png" alt="Four Zelda Hearts"></div>
-        <div class="ps">ReactJS</div>
-        <div class="heart3"><img src="assets/hearts-hearts-hearts.png" alt="Four Zelda Hearts"></div>
-        <div class="ps">SASS</div>
-        <div class="heart4"><img src="assets/fourhearts.png" alt="Four Zelda Hearts"></div>
-        <div class="gaming">Gaming</div>
-        <div class="heart5"><img src="assets/fivehearts.png" alt="Five Zelda Hearts"></div>
-        <div class="dance">Dancing</div> 
-        <div class="heart1"><img src="assets/oneheart.png" alt="One Zelda Heart"></div>
-        </div>
-
-
-        <div id="contactme">
-            <p>
-                <a href="contact.html">Contact me</a> to give your project a creative, personal touch!
+            <!--end of single item-->
+            <!--skills-->
+            <div class="content" id="skills">
+              <h4>skills (out of 5 hearts)</h4>
+              <div id="skills" class="container">
+                <div class="html">HTML5</div>
+                <div class="heart5"><img src="assets/fivehearts.png" alt="Five Zelda Hearts"></div>
+                <div class="css">CSS3</div>
+                <div class="heart5"><img src="assets/fivehearts.png" alt="Five Zelda Hearts"></div>
+                <div class="rwd">Responsive Web Design</div>
+                <div class="heart5"><img src="assets/fivehearts.png" alt="Five Zelda Hearts"></div>
+                <div class="js">JavaScript (ES6)</div>
+                <div class="heart4"><img src="assets/fourhearts.png" alt="Four Zelda Hearts"></div>
+                <div class="ps">Photoshop</div>
+                <div class="heart4"><img src="assets/fourhearts.png" alt="Four Zelda Hearts"></div>
+                <div class="ps">ReactJS</div>
+                <div class="heart3"><img src="assets/hearts-hearts-hearts.png" alt="Four Zelda Hearts"></div>
+                <div class="ps">SASS</div>
+                <div class="heart4"><img src="assets/fourhearts.png" alt="Four Zelda Hearts"></div>
+                <div class="gaming">Gaming</div>
+                <div class="heart5"><img src="assets/fivehearts.png" alt="Five Zelda Hearts"></div>
+                <div class="dance">Dancing</div> 
+                <div class="heart1"><img src="assets/oneheart.png" alt="One Zelda Heart"></div>
+              </div>
+            </div>
+            <!--end of skills-->
+            <!--contact-->
+            <div class="content" id="contact">
+              <h4>Contact Me</h4>
+              <p>Contact me to give your project a creative, personal touch!
             </p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/dana-d-0a97b6163/">
+                  <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="https://github.com/danadd">
+                <i class="fa fa-github fa-2x"></i>
+              </a>
+              <a href="mailto:draperdana25@gmail.com">
+                  <i class="fa fa-envelope fa-2x"></i>
+                  <span>
+                    draperdana25@gmail.com
+                  </span>
+              </a>
+            </div>  
             </div>
-    </body>
+            <!--end of contact-->          
+          </article>
+        </article>
+      </div>
+    </section>
     </div>
+  <footer class="about">
+    <p>&copy; Dana Draper | <span id="date"></span></p>
+  </footer>
+
+    <!--js-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/aboutnew.js"></script>
+
+  </body>
 </html>

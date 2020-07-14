@@ -1,0 +1,40 @@
+#headline{
+    color: black;
+}
+
+#main{
+    min-height: calc(100vh - 40px);
+  }
+
+#container {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(12px + 0.5vw);
+    padding: 5px;
+    width: fit-content;
+    margin: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    background: var(--clr-white);
+    border-radius: var(--radius);   
+
+    .social-icons{
+        a {
+        color: var(--clr-grey-5);
+        &:hover{
+            color: var(--clr-grey-3);
+        }
+        }
+    }
+}
+
+    .call{
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 5%;
+        padding-bottom: 10px;
+    }
