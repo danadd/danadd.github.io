@@ -179,6 +179,19 @@ nav{
             }
 
         }
+
+        .accu_wrap{
+            position: relative;
+            background: var(--clr-white);
+            border-radius: 5%;
+            padding: 1.5rem;
+
+                &:hover .img__description {
+                visibility: visible;
+                opacity: 1;
+                @include transition-ease;
+                }
+        }
          
         .FFVIIR_wrap{
             position: relative;
