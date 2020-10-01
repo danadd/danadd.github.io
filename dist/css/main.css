@@ -524,6 +524,20 @@ nav .navi .closebtn {
   color: #fff;
 }
 
+#projects .accu_wrap {
+  position: relative;
+  background: var(--clr-white);
+  border-radius: 5%;
+  padding: 1.5rem;
+}
+
+#projects .accu_wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
 #projects .FFVIIR_wrap {
   position: relative;
   background: var(--clr-white);
