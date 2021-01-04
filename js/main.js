@@ -11,7 +11,7 @@ function openNav() {
     const pageWidth = mainPage.getBoundingClientRect().width;
 
     //logic for mobile
-    if (pageWidth < 400){
+    if (pageWidth < 450){
       navSlideWidth.style.width = "200px";
       document.getElementById("main").style.marginLeft = "0px";
     }
@@ -29,7 +29,7 @@ function openNav() {
     document.getElementById("navislide").style.width = "0";
 
     //logic for mobile
-    if (pageWidth < 400){
+    if (pageWidth < 450){
       mainPage.style.marginLeft = "0px";
     } 
     else {
