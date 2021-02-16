@@ -18,10 +18,6 @@ h1 {
     text-align: center;
 }
 
-h2{
-    font-size: 2.5rem;
-}
-
 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
@@ -94,19 +90,24 @@ nav{
     }
 }
 
+.text-center{
+    text-align: center;
+}
+
 #main{
     margin-left: 200px;
     transition: .5s;
     padding: 20px;
 }
 
+
 .bigimg{
     img{
         display: block;
-        width: 70%;
+        width: 50%;
         height: auto;
         margin-left: 0px;
-        border-radius: 2%;
+        border-radius: 50%;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -115,14 +116,21 @@ nav{
     }
 }
 
+.welcome{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em
+}
+
 #welcome{
+    padding-bottom: 20px;
+    
     h1{
         background: var(--clr-white);
         border-radius: var(--radius);
         padding: 15px;
         padding-bottom: 20px;
     }
-    padding-bottom: 20px;
 }
 
 #projects{
@@ -141,98 +149,60 @@ nav{
         display: block;
         height: auto;
         width: 100%;
-        border-radius: 5%;}
+        border-radius: 5%;
+    }
          
-        .img__description {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: $background-hover-color;
-            color: $primary-color;
-            visibility: hidden;
-            opacity: 0;
-            border-radius: 5%;
-            text-align: center;
-            padding: 10px;
-            font-size: calc(30px + 0.5vw);
-            transition:
-             opacity .2s,
-             visibility .2s;
-
-
-            .projects__btn { 
-                opacity: 1;
-                color: set-text-color($secondary-color);
-                @include transition-ease;
-
-                display: grid;
-                grid-template-rows: repeat(3, 1fr);
-
-            
-                &:hover {
-                    color: $primary-color;
-                }
-            }
-
-        }
-
-        .accu_wrap{
-            position: relative;
-            background: var(--clr-white);
-            border-radius: 5%;
-            padding: 1.5rem;
-
-                &:hover .img__description {
-                visibility: visible;
-                opacity: 1;
-                @include transition-ease;
-                }
-        }
-         
-        .FFVIIR_wrap{
-            position: relative;
-            background: var(--clr-white);
-            border-radius: 5%;
-            padding: 1.5rem;
-
-                &:hover .img__description {
-                visibility: visible;
-                opacity: 1;
-                @include transition-ease;
-                }
-        }
+    .img__description {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $background-hover-color;
+        color: $primary-color;
+        visibility: hidden;
+        opacity: 0;
+        border-radius: 5%;
+        text-align: center;
+        padding: 10px;
+        font-size: calc(20px + 0.5vw);
+        transition:
+         opacity .2s,
+         visibility .2s;
+        .projects__btn{
+            @include transition-ease; 
+            opacity: 1;
+            color: set-text-color($secondary-color);
+            display: grid;
+            grid-template-rows: 1fr 1fr 10px;
         
-        .BBH_wrap{
-            position: relative;
-            background: var(--clr-white);
-            border-radius: 5%;
-            padding: 1.5rem;
-                &:hover .img__description {
-                visibility: visible;
-                opacity: 1;
-                @include transition-ease;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        .projects__btn__jquery {
+            @include transition-ease; 
+            opacity: 1;
+            color: set-text-color($secondary-color);
+                    
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        .languages {
+            font-size: calc(15px + 0.5vw)
         }
     }
-        
-        .typingtest_wrap{
+
+        .project_wrap{
+            box-shadow: 0 8px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             position: relative;
             background: var(--clr-white);
             border-radius: 5%;
             padding: 1.5rem;
-                &:hover .img__description {
-                visibility: visible;
-                opacity: 1;
-                @include transition-ease;
-                }
-        }        
-        
-        .weather_wrap{
-            position: relative;
-            background: var(--clr-white);
-            border-radius: 5%;
-            padding: 1.5rem;
+
                 &:hover .img__description {
                 visibility: visible;
                 opacity: 1;
@@ -240,17 +210,6 @@ nav{
                 }
         }
 
-        .recipe_wrap{
-            position: relative;
-            background: var(--clr-white);
-            border-radius: 5%;
-            padding: 1.5rem;
-                &:hover .img__description {
-                visibility: visible;
-                opacity: 1;
-                @include transition-ease;
-                }
-        }
 }
 
     footer{
@@ -269,13 +228,17 @@ nav{
 //
 // ** mobile design **
 //
-@media only screen and (max-width: 600px){
-    .img__description {
-        font-size: 1rem;
+@media only screen and (max-width:800px) { 
+.bigimg{
+    img{
+        width: 100%
     }
 }
 
-@media only screen and (max-width:800px) { 
+.welcome{
+    width: auto;
+}
+
     h1{
         font-weight: 400;
         font-size: 3.5rem;
@@ -286,6 +249,7 @@ nav{
     p{
         font-size: 1.2rem;
     }   
+
     .menu{
         a{
         visibility: hidden;
@@ -293,13 +257,12 @@ nav{
     }
 
     #welcome{ 
+        padding-bottom: 10px;
+        
         h1{
-            background: var(--clr-white);
-            border-radius: var(--radius);
             padding: 5px;
             padding-bottom: 10px;
         }
-        padding-bottom: 10px;
     }
 
     #main{
@@ -307,45 +270,32 @@ nav{
 
         #projects{
             display: grid;
-            grid-template-columns: 67vw;
-            grid-template-rows: 50vw 50vw;
+            grid-template-columns: 90vw;
+            grid-template-rows: 70vw 70vw;
             padding: 5px;                
             grid-gap: 2em;
 
             .projects__btn{
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-rows: 30px 30px;
+            }
+
+            .projects__btn__alt{
+                grid-template-rows: 30px 30px;
             }
 
             .img__description {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
-            .FFVIIR_wrap{
+
+            .project_wrap{
                 border-radius: 5%;
-                padding: 8px;
-            }
-            .BBH_wrap{
-                border-radius: 5%;
-                padding: 8px;    
-            }
-            .recipe_wrap{
-                border-radius: 5%;
-                padding: 8px;
-            }
-            .weather_wrap{
-                border-radius: 5%;
-                padding: 8px;
-            }
-            .typingtest_wrap{
-                border-radius: 5%;
-                padding: 8px;
+                padding: 6px;
             }
         }
     } 
     footer{
         position: relative;
-        p{
-        font-size: 0.9rem;
-        }
+        
     }
 
     //about page
@@ -357,7 +307,6 @@ nav{
     }
 
     .container{
-        font-family: 'Montserrat', sans-serif;
         font-size: calc(15px + 0.5vw);
         padding: 10px;  
         width: fit-content;
