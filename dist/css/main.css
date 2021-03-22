@@ -103,9 +103,7 @@ Variables
 }
 
 /*
-=============== 
 Global Styles
-===============
 */
 *,
 ::after,
@@ -261,9 +259,9 @@ h4 {
 }
 
 /*
-=============== 
+
 About
-===============
+
 */
 .about-img {
   margin-bottom: 2rem;
@@ -312,7 +310,7 @@ About
   border-top-left-radius: var(--radius);
 }
 
-.tab-btn:nth-child(3) {
+.tab-btn:nth-child(4) {
   border-top-right-radius: var(--radius);
 }
 
@@ -351,6 +349,51 @@ About
 
 .content.active {
   display: block;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: white;
+  background-color: #0f0036;
+  padding: 2px;
+  font-size: 105%;
+}
+
+#presi-main {
+  margin-right: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-left: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 20px;
+}
+
+.presi-p {
+  text-indent: 50px;
+}
+
+.presi-img {
+  max-width: 100%;
+  height: auto;
+  width: 100% \9;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 800px) {
+  #presi-main {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  h1.story {
+    font-size: 2rem;
+  }
+  p.presi-p {
+    font-size: 1em;
+  }
 }
 
 html,
