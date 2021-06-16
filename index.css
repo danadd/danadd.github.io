@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 4.5vw;
+    padding: 5px;
+}
+
+#main{
+    background-color: rgb(255, 255, 255);
+    margin-left: 200px;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+.navi{
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 20px;
+    left: 0px;
+    height: 100%;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; 
+    z-index: 1; /* Stay on top */
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s;
+}
+
+.navi a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.navi a:hover {
+    color: #f1f1f1;
+}
+ 
+.navi .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #818181;
+}
+
+.menu img{
+    height: auto;
+    width: 2%;
+    padding: 5px;
+}
+
+.menu{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.clickmenu{     
+    z-index: 1;     
+    padding: 2em;     
+    margin: -2em; 
+}
+
+nav li {
+    display: inline;
+    padding-right: 2rem;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 20px;
+  }
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(15px + 0.4vw);
+    padding: 15px;
+}
+
+#header img{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-left: 0px;
+    border-radius: 2%;
+}  
+
+#projects{
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: repeat(autofill, 1fr);
+    padding: 5px;
+    grid-gap: 2em;
+    width: fit-content;
+}
+
+#projects img{
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(133, 141, 146, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 5%;
+    text-align: center;
+    padding: 10px;
+    font-size: calc(30px + 0.5vw);
+  
+    /* transition effect. */
+    transition: opacity .2s, visibility .2s;
+} 
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    }
+
+a:visited{
+        text-decoration: none;
+        color: rgb(87, 87, 87);
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+@media screen and (max-width:800px) {    
+    h1{
+            font-family: 'Indie Flower', cursive;
+            font-weight: 400;
+            font-size: calc(30px + 0.5vw);
+            padding: 5px;
+            margin: 2px;
+    }
+    
+    #main{
+        background-color: rgb(255, 255, 255);
+        margin-left: 0px;
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+
+    .menu img{
+        height: auto;
+        width: 4%;
+        padding: 5px;
+    }
+
+    #projects{
+        display: grid;
+        grid-template-columns: 67vw;
+        grid-template-rows: 50vw 50vw;
+        padding: 5px;
+        grid-gap: 5em;
+        width: fit-content;
+    }
+    
+    #projects img{
+        display: block;
+        height: auto;
+        width: 100%;
+        border-radius: 5%;
+    }
+     
+    .img__description {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(133, 141, 146, 0.72);
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        border-radius: 5%;
+        text-align: center;
+        padding: 10px;
+        font-size: calc(30px + 0.5vw);
+      
+        /* transition effect. */
+        transition: opacity .2s, visibility .2s;
+    }     
+}
