@@ -54,9 +54,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
 Global Styles
-===============
 */
 
 *,
@@ -111,6 +109,7 @@ h4 {
 }
 
 .fa,
+.icon-pad,
 .fab{
   padding: 1rem;  
 }
@@ -118,32 +117,12 @@ h4 {
 .container{
   font-family: 'Montserrat', sans-serif;
   font-size: calc(15px + 0.5vw);
-  padding: 5px;  
+  padding: 5px;
   display: grid;
-  grid-template-columns: 10vw 20vw;
-  grid-template-rows: repeat(autofill, 1fr);
+  grid-template-columns: 15vw 20vw;
+  grid-template-rows: repeat(1fr, 1fr);
   grid-gap: 1em;
   width: fit-content;
-
-  .heart4 img{
-      height: auto;
-      width: 40%;
-  }
-
-  .heart5 img{
-      height: auto;
-      width: 50%;
-  }
-
-  .heart3 img{
-      height: auto;
-      width: 30%;
-  }
-
-  .heart1 img{
-      height: auto;
-      width: 11%;
-  }
 }
 
 .cert-icons{
@@ -207,9 +186,9 @@ h4 {
 //  place-items: center;
 //}
 /*
-=============== 
+
 About
-===============
+
 */
 .about-img {
   margin-bottom: 2rem;
@@ -246,7 +225,7 @@ About
 .tab-btn:nth-child(1) {
   border-top-left-radius: var(--radius);
 }
-.tab-btn:nth-child(3) {
+.tab-btn:nth-child(4) {
   border-top-right-radius: var(--radius);
 }
 .tab-btn {

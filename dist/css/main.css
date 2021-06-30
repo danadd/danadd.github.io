@@ -157,6 +157,7 @@ h4 {
 }
 
 .fa,
+.icon-pad,
 .fab {
   padding: 1rem;
 }
@@ -167,34 +168,14 @@ h4 {
   padding: 5px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10vw 20vw;
-      grid-template-columns: 10vw 20vw;
-  -ms-grid-rows: (1fr)[autofill];
-      grid-template-rows: repeat(autofill, 1fr);
+  -ms-grid-columns: 15vw 20vw;
+      grid-template-columns: 15vw 20vw;
+  -ms-grid-rows: (1fr)[1fr];
+      grid-template-rows: repeat(1fr, 1fr);
   grid-gap: 1em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.container .heart4 img {
-  height: auto;
-  width: 40%;
-}
-
-.container .heart5 img {
-  height: auto;
-  width: 50%;
-}
-
-.container .heart3 img {
-  height: auto;
-  width: 30%;
-}
-
-.container .heart1 img {
-  height: auto;
-  width: 11%;
 }
 
 .cert-icons {
@@ -700,21 +681,12 @@ footer p {
     width: fit-content;
     display: block;
   }
-  .container .heart4 img {
-    height: auto;
-    width: 40%;
+  .container .language {
+    padding-bottom: 1em;
+    text-align: center;
   }
-  .container .heart5 img {
-    height: auto;
-    width: 50%;
-  }
-  .container .heart3 img {
-    height: auto;
-    width: 30%;
-  }
-  .container .heart1 img {
-    height: auto;
-    width: 11%;
+  .container .language .languages_used {
+    padding: 0px;
   }
   #container {
     font-size: calc(15px + 0.5vw);

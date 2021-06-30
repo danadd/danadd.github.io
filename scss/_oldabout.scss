@@ -1,0 +1,71 @@
+#headline {
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: calc(40px + 0.5vw);
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.about {
+    text-decoration: underline;
+    text-align: left;
+}
+
+#aboutinfo{
+    display: grid;
+    grid-template-columns: 30vw 30vw 20vw;
+    grid-template-rows: repeat(autofill, 1fr);
+    padding: 10px;
+    gap: 1em;
+    width: fit-content;
+
+    .name{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .pic{
+        grid-column: 2 / 4;
+        grid-row: span 3;
+    }
+    
+    .pic img{
+        display: block;
+        height: auto;
+        width: 70%;
+        border-radius: 10%;
+    }  
+}
+
+.skill{
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: calc(40px + 0.5vw);
+    padding: 5px;
+    margin: 2px;
+    text-decoration: underline;
+}
+
+.container{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(15px + 0.5vw);
+    padding: 5px;  
+    display: grid;
+    grid-template-columns: 10vw 20vw;
+    grid-template-rows: repeat(autofill, 1fr);
+    grid-gap: 1em;
+    width: fit-content;
+}
+
+#contactme{
+    a{
+        text-decoration: underline;
+        
+        &:hover{
+        font-style: italic;
+        color: rgb(73, 73, 73);
+        }
+    }
+}

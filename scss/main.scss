@@ -1,6 +1,7 @@
 @import './config';
 @import './contact';
 @import './about';
+@import './presentation';
 
 html,
 body{ 
@@ -169,6 +170,7 @@ nav{
         transition:
          opacity .2s,
          visibility .2s;
+         
         .projects__btn{
             @include transition-ease; 
             opacity: 1;
@@ -225,6 +227,8 @@ nav{
         font-size: 1rem;
         }
     }
+
+
 //
 // ** mobile design **
 //
@@ -312,24 +316,13 @@ nav{
         width: fit-content;
         display: block;
 
-        .heart4 img{
-            height: auto;
-            width: 40%;
-        }
-    
-        .heart5 img{
-            height: auto;
-            width: 50%;
-        }
-    
-        .heart3 img{
-            height: auto;
-            width: 30%;
-        }
-    
-        .heart1 img{
-            height: auto;
-            width: 11%;
+        .language {
+            padding-bottom: 1em;
+            text-align: center;
+
+            .languages_used{
+                padding: 0px;
+            }
         }
     }
 
