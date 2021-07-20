@@ -156,6 +156,13 @@ h4 {
   margin: 0 auto;
 }
 
+.udemy {
+  padding-right: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .fa,
 .icon-pad,
 .fab {
