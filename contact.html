@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Contact Me</title>
-    <meta charset="UTF-8">
-    <link href="./dist/css/main.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kalam:300,400,700|Montserrat:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/53e63c2ea0.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <meta charset="UTF-8" />
+    <link href="./dist/css/main.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Kalam:300,400,700|Montserrat:300,300i,400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/53e63c2ea0.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div id="navislide" class="navi">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="/index.html">Home</a> 
-                <a href="/about.html">About Me</a>
-                <a href="/#projects">Projects</a>
-                <a href="/presentation.html">My Story</a>
-            </div>
-        </nav>
+      <nav>
+        <div id="navislide" class="navi">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About Me</a>
+          <a href="/#projects">Projects</a>
+        </div>
+      </nav>
     </header>
     <div class="menu">
-        <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
-        <a href="javascript:void(0)" class="clickmenu" onclick="openNav()">Menu</a>
+      <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+      <a href="javascript:void(0)" class="clickmenu" onclick="openNav()">Menu</a>
     </div>
     <div id="main">
-    <div id="headline">
+      <div id="headline">
         <h2>Contact Information</h2>
+      </div>
+      <div id="container" class="contact">
+        <div class="getin">
+          <p>Get in contact with me to give your website a creative, personal touch!</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/dana-d-0a97b6163/">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <span>linkedIn</span>
+          </a>
+          <a href="mailto:draperdana25@gmail.com">
+            <i class="fa fa-envelope fa-2x"></i>
+            <span>draperdana25@gmail.com</span>
+          </a>
+          <a href="https://github.com/danadd">
+            <i class="fa fa-github fa-2x"></i>
+            <span>github</span>
+          </a>
+        </div>
+        <div id="callimg">
+          <img class="call" src="assets/me2.png" alt="my portrait picture" />
+        </div>
+      </div>
     </div>
-        <div id="container" class="contact">
-            <div class="getin">
-                <p>Get in contact with me to give your website a creative, personal touch!</p>
-            </div>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/dana-d-0a97b6163/">
-                  <i class="fab fa-linkedin fa-2x"></i>
-                  <span>linkedIn</span>
-              </a>
-              <a href="mailto:draperdana25@gmail.com">
-                  <i class="fa fa-envelope fa-2x"></i>
-                  <span>draperdana25@gmail.com</span>
-              </a>
-              <a href="https://github.com/danadd">
-                <i class="fa fa-github fa-2x"></i>
-                <span>github</span>
-                </a>
-            </div> 
-            <div id="callimg">
-                <img class="call"
-                src="assets/me2.png" alt="my portrait picture">
-            </div>
-        </div>    
-    </div> 
     <footer class="contact">
-        <p>&copy; Dana Draper | <span id="date"></span></p>
+      <p>&copy; Dana Draper | <span id="date"></span></p>
     </footer>
     <!--js-->
     <script type="text/javascript" src="js/main.js"></script>
-</body>
+  </body>
 </html>

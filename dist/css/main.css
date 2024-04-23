@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #headline {
@@ -15,7 +15,7 @@
 }
 
 #container {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: calc(12px + 0.5vw);
   padding: 5px;
   width: -webkit-fit-content;
@@ -111,7 +111,7 @@ Global Styles
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #main {
@@ -142,7 +142,7 @@ h4 {
 }
 
 #headline {
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-weight: 400;
   padding: 5px;
   margin: 2px;
@@ -170,15 +170,15 @@ h4 {
 }
 
 .container {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: calc(15px + 0.5vw);
   padding: 5px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 15vw 20vw;
-      grid-template-columns: 15vw 20vw;
-  -ms-grid-rows: (1fr)[1fr];
-      grid-template-rows: repeat(1fr, 1fr);
+  grid-template-columns: 15vw 20vw;
+  -ms-grid-rows: (1fr) [1fr];
+  grid-template-rows: repeat(1fr, 1fr);
   grid-gap: 1em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -220,7 +220,7 @@ h4 {
   border: 2px solid var(--clr-black);
   cursor: pointer;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
 
@@ -258,7 +258,7 @@ About
 .about-img img {
   border-radius: var(--radius);
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 20rem;
 }
 
@@ -270,9 +270,9 @@ About
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 2rem;
-            column-gap: 2rem;
+    column-gap: 2rem;
   }
 }
 
@@ -282,7 +282,7 @@ About
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto 1fr;
-      grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .btn-container {
@@ -291,7 +291,7 @@ About
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .tab-btn:nth-child(1) {
@@ -340,7 +340,7 @@ About
 }
 
 code {
-  font-family: Consolas,"courier new";
+  font-family: Consolas, "courier new";
   color: white;
   background-color: #0f0036;
   padding: 2px;
@@ -353,8 +353,8 @@ code {
   border-radius: 10px;
   margin-bottom: 5px;
   margin-left: 200px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   padding: 20px;
 }
 
@@ -391,18 +391,18 @@ body {
 
 body {
   background: var(--clr-grey-10);
-  font-family: 'Monsterrat', sans-serif;
+  font-family: "Monsterrat", sans-serif;
 }
 
 h1 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   font-size: 4rem;
   padding: 5px;
   text-align: center;
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
   padding: 15px;
 }
@@ -413,7 +413,7 @@ a {
 }
 
 .menu {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.3em;
   padding: 10px;
 }
@@ -479,8 +479,8 @@ nav .navi .closebtn {
 
 #main {
   margin-left: 200px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   padding: 20px;
 }
 
@@ -493,7 +493,7 @@ nav .navi .closebtn {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .welcome {
@@ -517,9 +517,9 @@ nav .navi .closebtn {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30vw 30vw;
-      grid-template-columns: 30vw 30vw;
-  -ms-grid-rows: (1fr)[autofill];
-      grid-template-rows: repeat(autofill, 1fr);
+  grid-template-columns: 30vw 30vw;
+  -ms-grid-rows: (1fr) [autofill];
+  grid-template-rows: repeat(autofill, 1fr);
   padding: 5px;
   grid-gap: 2em;
   width: -webkit-fit-content;
@@ -528,7 +528,7 @@ nav .navi .closebtn {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 #projects img {
@@ -552,8 +552,8 @@ nav .navi .closebtn {
   text-align: center;
   padding: 10px;
   font-size: calc(20px + 0.5vw);
-  -webkit-transition: opacity .2s, visibility .2s;
-  transition: opacity .2s, visibility .2s;
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.2s, visibility 0.2s;
 }
 
 #projects .img__description .projects__btn {
@@ -564,7 +564,7 @@ nav .navi .closebtn {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 10px;
-      grid-template-rows: 1fr 1fr 10px;
+  grid-template-rows: 1fr 1fr 10px;
 }
 
 #projects .img__description .projects__btn:hover {
@@ -588,7 +588,7 @@ nav .navi .closebtn {
 
 #projects .project_wrap {
   -webkit-box-shadow: 0 8px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
   background: var(--clr-white);
   border-radius: 5%;
@@ -613,7 +613,7 @@ footer p {
   background: var(--clr-white);
   border-radius: 10%;
   padding: 1rem;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-size: 1rem;
 }
 
@@ -650,19 +650,19 @@ footer p {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 90vw;
-        grid-template-columns: 90vw;
+    grid-template-columns: 90vw;
     -ms-grid-rows: 70vw 70vw;
-        grid-template-rows: 70vw 70vw;
+    grid-template-rows: 70vw 70vw;
     padding: 5px;
     grid-gap: 2em;
   }
   #main #projects .projects__btn {
     -ms-grid-rows: 30px 30px;
-        grid-template-rows: 30px 30px;
+    grid-template-rows: 30px 30px;
   }
   #main #projects .projects__btn__alt {
     -ms-grid-rows: 30px 30px;
-        grid-template-rows: 30px 30px;
+    grid-template-rows: 30px 30px;
   }
   #main #projects .img__description {
     font-size: 1.2rem;
@@ -704,8 +704,8 @@ footer p {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[autofill];
-        grid-template-columns: repeat(autofill, 1fr);
+    -ms-grid-columns: (1fr) [autofill];
+    grid-template-columns: repeat(autofill, 1fr);
   }
   #callimg {
     padding: 0.5rem;
@@ -716,10 +716,10 @@ footer p {
   .social-icons {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[autofill];
-        grid-template-columns: repeat(autofill, 1fr);
-    -ms-grid-rows: (1fr)[autofill];
-        grid-template-rows: repeat(autofill, 1fr);
+    -ms-grid-columns: (1fr) [autofill];
+    grid-template-columns: repeat(autofill, 1fr);
+    -ms-grid-rows: (1fr) [autofill];
+    grid-template-rows: repeat(autofill, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */
